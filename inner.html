@@ -26,12 +26,25 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="hotel-details">
               <legend>Инфраструктура:</legend>
-              <label><input type="checkbox" checked>Бассейн</label>
-              <label><input type="checkbox">Парковка</label>
-              <label><input type="checkbox">Wi-Fi</label>
+              <label><input type="checkbox" name="details" value="pool" checked>Бассейн</label>
+              <label><input type="checkbox" name="details" value="parking">Парковка</label>
+              <label><input type="checkbox" name="details" value="wi-fi">Wi-Fi</label>
             </fieldset>
-            <fieldset class="hotel-type"></fieldset>
-            <fieldset class="hotel-price"></fieldset>
+            <fieldset class="hotel-type">
+              <legend>Тип жилья</legend>
+              <label><input type="checkbox" name="type" value="hotel" checked>Гостиница</label>
+              <label><input type="checkbox" name="type" value="motel" checked>Мотель</label>
+              <label><input type="checkbox" name="type" value="apartments" checked>Апартаменты</label>
+            </fieldset>
+            <fieldset class="hotel-price">
+              <legend>Стоимость в сутки (р):</legend>
+              <div class="price-limits">
+                <span class="limit">От 0</span>
+                <!-- вертикальная черта будет псевдоэлементом -->
+                <span class="limit">До 3000</span>
+              </div>
+              <input type="range" name="price-range" min="0" max="3000" value="2500">
+            </fieldset>
             <button type="submit">Показать</button>
           </form>
         </section>
@@ -52,7 +65,9 @@
           <a class="social-btn social-btn-ut" href="#">Ютуб</a>
         </section>
         <section class="footer-copyright">
-          Website by <a href="https://htmlacademy.ru/"><img class="academy-logo" src="academy-logo.png" width="113" height="39" alt="html academy"></a>
+          Website by <a href="https://htmlacademy.ru/">
+          <img class="academy-logo" src="academy-logo.png" width="113" height="39" alt="html academy">
+          </a>
         </section>
       </footer>
     </div>
