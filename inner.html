@@ -43,7 +43,10 @@
                 <!-- вертикальная черта будет псевдоэлементом -->
                 <span class="limit">До 3000</span>
               </div>
-              <input type="range" name="price-range" min="0" max="3000" value="2500">
+              <div class="price-range">
+                <input type="range" name="min-price" min="0" max="3000" value="0">
+                <input type="range" name="max-price" min="0" max="3000" value="2000">
+              </div>
             </fieldset>
             <button type="submit">Показать</button>
           </form>
