@@ -88,24 +88,24 @@
           <!-- всплывающее окно с формой -->
           <form class="hotel-form" action="https://echo.htmlacademy.ru" method="get">
             <label>Дата заезда:
-              <input type="date" name="check-in" value="24 апреля 2016">
+              <input class="date" type="text" name="check-in" value="24 апреля 2016">
               <button class="calendar" type="button" id="check-in-date"></button>
             </label>
             <label>Дата выезда:
-              <input type="date" name="check-out" value="4 июля 2016">
+              <input class="date" type="text" name="check-out" value="4 июля 2016">
               <button class="calendar" type="button" id="check-out-date"></button>
             </label>
             <label>Взрослые:
               <button class="change-number" type="button" id="less-adults">-</button>
-              <input class="number" type="number" name="adults" value="2" min="1">
+              <input class="number" type="text" name="adults" value="2" min="1">
               <button class="change-number" type="button" id="more-adults">+</button>
             </label>
             <label>Дети:
               <button class="change-number" type="button" id="less-children">-</button>
-              <input class="number" type="number" name="children" value="0" min="0">
+              <input class="number" type="text" name="children" value="0" min="0">
               <button class="change-number" type="button" id="more-children">+</button>
             </label>
-            <button class="find-hotel" type="button" id="find-hotel">Найти</button>
+            <button class="find-hotel" type="submit">Найти</button>
           </form>
         </section>
         <section class="map"></section>
