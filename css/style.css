@@ -27,13 +27,6 @@ h3 {
   outline: 3px solid green;
 }
 
-.main-logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-79px);
-}
-
 .main-navigation ul {
   display: flex;
   justify-content: flex-start;
@@ -53,6 +46,13 @@ h3 {
   outline: 3px solid yellow;
 }
 
-.main-navigation li:nth-child(2) {
-  margin-right: 20%;
+.main-navigation li:nth-child(3) {
+  position: relative;
+}
+
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
 }
