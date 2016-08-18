@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -16,4 +18,41 @@ h3 {
 
 h3 {
   line-height: 21px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  outline: 3px solid green;
+}
+
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-79px);
+}
+
+.main-navigation ul {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  outline: 3px solid red;
+  min-height: 55px;
+}
+
+.main-navigation li {
+  width: 20%;
+  margin: 0;
+
+  outline: 3px solid yellow;
+}
+
+.main-navigation li:nth-child(2) {
+  margin-right: 20%;
 }
