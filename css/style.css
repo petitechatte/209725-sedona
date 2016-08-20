@@ -73,3 +73,17 @@ h3 {
   outline: 3px solid yellow;
   background-color: gold;
 }
+
+.features {
+  display: table;
+  width: 100%;
+
+  outline: 3px solid red;
+}
+
+.features-header {
+  display: table-caption;
+  padding: 60px 312px;
+
+  outline: 3px solid yellow;
+}
