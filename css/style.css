@@ -124,6 +124,17 @@ h3 {
   outline: 3px solid red;
 }
 
+.hotel-form {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 570px;
+  height: 395px;
+
+  outline: 3px solid yellow;
+}
+
 .map {
   height: 473px;
   outline: 3px solid red;
@@ -132,3 +143,5 @@ h3 {
 .footer {
   min-height: 120px;
 }
+
+
