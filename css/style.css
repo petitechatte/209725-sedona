@@ -75,15 +75,26 @@ h3 {
 }
 
 .features {
-  display: table;
-  width: 100%;
 
   outline: 3px solid red;
 }
 
 .features-header {
-  display: table-caption;
   padding: 60px 312px;
 
   outline: 3px solid yellow;
+}
+
+.row {
+  outline: 3px solid yellow;
+}
+
+.illustration {
+
+  width: 800px;
+  height: 256px;
+}
+
+.col {
+  width: 400px;
 }
