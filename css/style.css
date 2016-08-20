@@ -6,10 +6,6 @@ body {
   color: #333333;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-
-  background-image: url("https://up.htmlacademy.ru/static/img/intensive/htmlcss/sedona.jpg");
-  background-repeat: no-repeat;
-  background-size: 1280px auto;
 }
 
 h2,
@@ -140,8 +136,14 @@ h3 {
   outline: 3px solid red;
 }
 
-.footer {
+.main-footer {
+  display: flex;
   min-height: 120px;
+}
+
+.main-footer section {
+  padding: 35px;
+  text-align: center;
 }
 
 
