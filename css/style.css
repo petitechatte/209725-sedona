@@ -6,6 +6,10 @@ body {
   color: #333333;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
+
+  background-image: url("https://up.htmlacademy.ru/static/img/intensive/htmlcss/sedona.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h2,
@@ -75,26 +79,40 @@ h3 {
 }
 
 .features {
+  display: flex;
+  flex-direction: column;
 
   outline: 3px solid red;
 }
 
 .features-header {
-  padding: 60px 312px;
+  min-height: 216px;
+  padding: 0 312px;
 
   outline: 3px solid yellow;
 }
 
 .row {
+  display: flex;
+
   outline: 3px solid yellow;
 }
 
 .illustration {
-
   width: 800px;
   height: 256px;
 }
 
 .col {
-  width: 400px;
+  flex-basis: 400px;
+
+  outline: 3px solid blue;
+}
+
+.details {
+  min-height: 330px;
+}
+
+.last-features {
+  min-height: 255px;
 }
