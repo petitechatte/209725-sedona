@@ -9,7 +9,7 @@ body {
 
   background-image: url("https://up.htmlacademy.ru/static/img/intensive/htmlcss/sedona.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1280px auto;
 }
 
 h2,
@@ -81,20 +81,20 @@ h3 {
 .features {
   display: flex;
   flex-direction: column;
-
+  /* padding: 1px 0;  против выпадения отступа */
   outline: 3px solid red;
 }
 
 .features-header {
   min-height: 216px;
-  padding: 0 312px;
+  padding: 0px 312px;
 
   outline: 3px solid yellow;
 }
 
 .row {
   display: flex;
-
+  /* padding: 1px 0;  против выпадения отступа */
   outline: 3px solid yellow;
 }
 
@@ -104,8 +104,7 @@ h3 {
 }
 
 .col {
-  flex-basis: 400px;
-
+  width: 400px;
   outline: 3px solid blue;
 }
 
@@ -115,4 +114,21 @@ h3 {
 
 .last-features {
   min-height: 255px;
+}
+
+.hotel-search {
+  position: relative;
+  padding-top: 1px; /* против выпадения отступа */
+
+  min-height: 289px;
+  outline: 3px solid red;
+}
+
+.map {
+  height: 593px;
+  outline: 3px solid red;
+}
+
+.footer {
+  min-height: 120px;
 }
