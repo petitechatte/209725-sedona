@@ -12,10 +12,6 @@ body {
   color: #333333;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-
-  background-image: url("https://up.htmlacademy.ru/static/img/intensive/htmlcss/task-preview/sedona-hotels-1000.jpg");
-  background-repeat: no-repeat;
-  background-size: 1280px auto;
 }
 
 h2,
