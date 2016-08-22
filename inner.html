@@ -25,38 +25,35 @@
       </header>
       <main class="inner">
         <section class="hotel-filter">
-          <div class="container">
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="hotel-details">
-                <legend>Инфраструктура:</legend>
-                <label><input type="checkbox" name="details" value="pool" checked>Бассейн</label>
-                <label><input type="checkbox" name="details" value="parking">Парковка</label>
-                <label><input type="checkbox" name="details" value="wi-fi">Wi-Fi</label>
-              </fieldset>
-              <fieldset class="hotel-type">
-                <legend>Тип жилья</legend>
-                <label><input type="checkbox" name="type" value="hotel" checked>Гостиница</label>
-                <label><input type="checkbox" name="type" value="motel" checked>Мотель</label>
-                <label><input type="checkbox" name="type" value="apartments" checked>Апартаменты</label>
-              </fieldset>
-              <fieldset class="hotel-price">
-                <legend>Стоимость в сутки (р):</legend>
-                <div class="price-limits">
+          <form class="container clearfix" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="hotel-details">
+              <legend>Инфраструктура:</legend>
+              <label><input type="checkbox" name="details" value="pool" checked>Бассейн</label>
+              <label><input type="checkbox" name="details" value="parking">Парковка</label>
+              <label><input type="checkbox" name="details" value="wi-fi">Wi-Fi</label>
+            </fieldset>
+            <fieldset class="hotel-type">
+              <legend>Тип жилья</legend>
+              <label><input type="checkbox" name="type" value="hotel" checked>Гостиница</label>
+              <label><input type="checkbox" name="type" value="motel" checked>Мотель</label>
+              <label><input type="checkbox" name="type" value="apartments" checked>Апартаменты</label>
+            </fieldset>
+            <fieldset class="hotel-price">
+              <legend>Стоимость в сутки (р):</legend>
+              <div class="price-limits">
                 <span class="limit">От 0</span>
                 <!-- вертикальная черта будет псевдоэлементом -->
                 <span class="limit">До 3000</span>
-                </div>
-                <div class="price-range">
-                  <input type="range" name="min-price" min="0" max="3000" value="0">
-                  <input type="range" name="max-price" min="0" max="3000" value="2000">
-                </div>
-              </fieldset>
+              </div>
+               <div class="price-range">
+                 <input type="range" name="min-price" min="0" max="3000" value="0">
+                 <input type="range" name="max-price" min="0" max="3000" value="2000">
+              </div>
               <button type="submit">Показать</button>
-            </form>
-          </div>
+            </fieldset>
+          </form>
         </section>
-        <section class="hotel-found">
-          <div class="container">
+        <section class="hotel-found container">
             <section class="hotel-sort">
               <div class="hotels-number">Найдено: 3</div>
               <div class="sorting-type">
@@ -74,31 +71,31 @@
                 </ul>
               </div>
           </section>
-            <article class="hotel">
-              <section class="hotel-photo">
-                <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
-              </section>
-              <section class="hotel-info">
-                <h2><a href="#">Amara Resort &amp; Spa</a></h2>
-                <div class="hotel-info-main">
-                  <span class="hotel-info-type">Гостиница</span>
-                  <span class="hotel-info-price">От 3500 р.</span>
-                </div>
-                <div class="hotel-buttons">
+          <article class="hotel">
+            <section class="hotel-photo">
+              <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+            </section>
+            <section class="hotel-info">
+              <h2><a href="#">Amara Resort &amp; Spa</a></h2>
+              <div class="hotel-info-main">
+                <span class="hotel-info-type">Гостиница</span>
+                <span class="hotel-info-price">От 3500 р.</span>
+              </div>
+              <div class="hotel-buttons">
                   <a class="hotel-page" href="#">Подробнее</a>
                   <a class="hotel-booking" href="#">Забронировать</a>
                 </div>
-              </section>
-              <section class="hotel-quality">
-                <div class="hotel-stars"></div>
-                <div class="hotel-raiting">Рейтинг: 8,5</div>
-              </section>
+            </section>
+            <section class="hotel-quality">
+              <div class="hotel-stars"></div>
+              <div class="hotel-raiting">Рейтинг: 8,5</div>
+            </section>
           </article>
-            <article class="hotel">
-              <section class="hotel-photo">
-                <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
-              </section>
-              <section class="hotel-info">
+          <article class="hotel">
+            <section class="hotel-photo">
+              <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+            </section>
+            <section class="hotel-info">
                 <h2><a href="#">Desert Quail Inn</a></h2>
                 <div class="hotel-info-main">
                   <span class="hotel-info-type">Мотель</span>
@@ -109,32 +106,31 @@
                   <a class="hotel-booking" href="#">Забронировать</a>
                 </div>
               </section>
-              <section class="hotel-quality">
-                <div class="hotel-stars"></div>
-                <div class="hotel-raiting">Рейтинг: 8,9</div>
-              </section>
-            </article>
-            <article class="hotel">
-              <section class="hotel-photo">
-                <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-              </section>
-              <section class="hotel-info">
-                <h2><a href="#">Villas at Poco Diablo</a></h2>
-                <div class="hotel-info-main">
-                  <span class="hotel-info-type">Апартаменты</span>
-                  <span class="hotel-info-price">От 4000 р.</span>
-                </div>
-                <div class="hotel-buttons">
-                  <a class="hotel-page" href="#">Подробнее</a>
-                  <a class="hotel-booking" href="#">Забронировать</a>
-                </div>
-              </section>
-              <section class="hotel-quality">
-                <div class="hotel-stars"></div>
-                <div class="hotel-raiting">Рейтинг: 9,2</div>
-              </section>
-            </article>
-          </div>
+            <section class="hotel-quality">
+              <div class="hotel-stars"></div>
+              <div class="hotel-raiting">Рейтинг: 8,9</div>
+            </section>
+          </article>
+          <article class="hotel">
+            <section class="hotel-photo">
+              <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            </section>
+            <section class="hotel-info">
+              <h2><a href="#">Villas at Poco Diablo</a></h2>
+              <div class="hotel-info-main">
+                <span class="hotel-info-type">Апартаменты</span>
+                <span class="hotel-info-price">От 4000 р.</span>
+               </div>
+               <div class="hotel-buttons">
+                <a class="hotel-page" href="#">Подробнее</a>
+                <a class="hotel-booking" href="#">Забронировать</a>
+               </div>
+            </section>
+             <section class="hotel-quality">
+              <div class="hotel-stars"></div>
+              <div class="hotel-raiting">Рейтинг: 9,2</div>
+            </section>
+          </article>
         </section>
       </main>
       <footer class="main-footer">

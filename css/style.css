@@ -20,6 +20,12 @@ h3 {
   line-height: 21px;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -146,4 +152,30 @@ h3 {
   text-align: center;
 }
 
+.container {
+  width: 1056px;
+  margin: auto;
 
+  outline: 3px solid purple;
+}
+
+.hotel-filter {
+  outline: 3px solid red;
+}
+
+.hotel-details,
+.hotel-type {
+  float: left;
+  width: 240px;
+
+  min-height: 217px;
+  outline: 3px solid yellow;
+}
+
+.hotel-price {
+  float: right;
+  width: 328px;
+
+  min-height: 217px;
+  outline: 3px solid yellow;
+}
