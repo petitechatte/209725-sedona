@@ -196,6 +196,8 @@ h3 {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+
+  min-height: 86px;
   outline: 3px solid yellow;
 }
 
@@ -215,21 +217,47 @@ h3 {
   outline: 3px solid blue;
 }
 
-.sorting-type {
+.sorting-type,
+.hotel-info {
   flex-grow: 1;
   outline: 3px solid blue;
 }
 
 .sorting-type li {
-  padding: 35px 15px;
+  padding: 0 15px;
 }
 
-.sorting-direction {
+.sorting-direction,
+.hotel-quality {
+  flex-basis: 240px;
   margin-left: auto;
+
+  text-align: right;
 
   outline: 3px solid blue;
 }
 
 .sorting-direction li {
-  padding: 35px 0;
+  padding: 0;
+}
+
+.hotel {
+  display: flex;
+
+  outline: 3px solid yellow;
+}
+
+.hotel section {
+  outline: 3px solid blue;
+}
+
+.hotel-photo {
+  width: 135px;
+  height: 90px;
+  padding: 31px 0;
+}
+
+.hotel-photo img {
+  width: 100%;
+  height: auto;
 }
