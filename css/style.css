@@ -1,3 +1,9 @@
+* {
+margin: 0;
+border: 0;
+padding: 0;
+}
+
 body {
   margin: 0;
 
@@ -6,6 +12,10 @@ body {
   color: #333333;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+
+  background-image: url("https://up.htmlacademy.ru/static/img/intensive/htmlcss/task-preview/sedona-hotels-1000.jpg");
+  background-repeat: no-repeat;
+  background-size: 1280px auto;
 }
 
 h2,
@@ -167,15 +177,59 @@ h3 {
 .hotel-type {
   float: left;
   width: 240px;
+  padding: 0;
 
-  min-height: 217px;
+  min-height: 216px;
   outline: 3px solid yellow;
 }
 
 .hotel-price {
   float: right;
   width: 328px;
+  padding: 0;
 
-  min-height: 217px;
+  min-height: 216px;
   outline: 3px solid yellow;
+}
+
+.hotel-sort {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  outline: 3px solid yellow;
+}
+
+.hotel-sort ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.hotel-sort li {
+  outline: 3px solid orange;
+}
+
+.hotels-number {
+  flex-basis: 135px;
+
+  outline: 3px solid blue;
+}
+
+.sorting-type {
+  flex-grow: 1;
+  outline: 3px solid blue;
+}
+
+.sorting-type li {
+  padding: 35px 15px;
+}
+
+.sorting-direction {
+  margin-left: auto;
+
+  outline: 3px solid blue;
+}
+
+.sorting-direction li {
+  padding: 35px 0;
 }
