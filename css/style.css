@@ -237,6 +237,8 @@ h3 {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+
+  list-style-type: none;
 }
 
 .hotel-sort li {
