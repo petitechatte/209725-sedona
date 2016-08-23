@@ -40,8 +40,12 @@ h3 {
 }
 
 .main-navigation ul {
+ display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: auto;
   margin: 0;
   padding: 0;
@@ -87,8 +91,13 @@ h3 {
 }
 
 .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* padding: 1px 0;  против выпадения отступа */
   outline: 3px solid red;
 }
@@ -101,6 +110,8 @@ h3 {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* padding: 1px 0;  против выпадения отступа */
   outline: 3px solid yellow;
@@ -136,7 +147,8 @@ h3 {
   position: absolute;
   top: 290px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 570px;
   min-height: 395px;
 
@@ -149,6 +161,8 @@ h3 {
 }
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 120px;
 }
@@ -189,18 +203,30 @@ h3 {
 }
 
 .hotel-sort {
+   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 
   min-height: 86px;
   outline: 3px solid yellow;
 }
 
 .hotel-sort ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .hotel-sort li {
@@ -208,14 +234,18 @@ h3 {
 }
 
 .hotels-number {
-  flex-basis: 135px;
+  -ms-flex-preferred-size: 135px;
+      flex-basis: 135px;
 
   outline: 3px solid blue;
 }
 
 .sorting-type,
 .hotel-info {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+
   outline: 3px solid blue;
 }
 
@@ -225,7 +255,8 @@ h3 {
 
 .sorting-direction,
 .hotel-quality {
-  flex-basis: 240px;
+  -ms-flex-preferred-size: 240px;
+      flex-basis: 240px;
   margin-left: auto;
 
   text-align: right;
@@ -238,6 +269,8 @@ h3 {
 }
 
 .hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   outline: 3px solid yellow;
