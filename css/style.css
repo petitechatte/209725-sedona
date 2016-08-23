@@ -46,6 +46,9 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: auto;
   margin: 0;
   padding: 0;
@@ -59,6 +62,7 @@ h3 {
   width: 20%;
   margin: 0;
 
+  min-height: 55px;
   outline: 3px solid yellow;
 }
 
@@ -123,7 +127,13 @@ h3 {
 }
 
 .col {
+/*
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+*/
   width: 400px;
+  box-sizing: border-box;
+
   outline: 3px solid blue;
 }
 
@@ -237,6 +247,7 @@ h3 {
   -ms-flex-preferred-size: 135px;
       flex-basis: 135px;
 
+  min-height: 86px;
   outline: 3px solid blue;
 }
 
