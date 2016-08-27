@@ -88,7 +88,7 @@ img {
   height: 510px;
   box-sizing: border-box;
   padding-top: 75px;
-
+  background: #386f98 url("../img/background-photo.jpg") no-repeat;
   outline: 3px solid red;
 }
 
@@ -98,7 +98,6 @@ img {
   margin: 0 auto;
 
   outline: 3px solid yellow;
-  background-color: gold;
 }
 
 .features {
