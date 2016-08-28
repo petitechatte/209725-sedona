@@ -196,10 +196,6 @@ img {
   outline: 3px solid blue;
 }
 
-.details {
-  min-height: 330px;
-}
-
 .feature-1,
 .feature-2 {
   color: #ffffff;
@@ -231,6 +227,34 @@ img {
 
 .feature-2 .illustration {
   background-image: url("../img/devil-bridge.jpg");
+}
+
+.details h3 {
+  margin-top: 60px;
+  padding-top: 100px;
+}
+
+.col-1 h3 {
+  background-image: url("../img/habitation-icon.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.col-2 h3 {
+  background-image: url("../img/food-icon.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.col-3 h3 {
+  background-image: url("../img/souvenirs-icon.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.details p {
+  margin: 30px 55px;
+  margin-bottom: 80px;
 }
 
 .last-features {
