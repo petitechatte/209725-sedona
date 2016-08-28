@@ -155,8 +155,6 @@ img {
           flex-direction: column;
 }
 
-
-
 .features-header {
   padding: 0px 312px;
 
@@ -184,18 +182,55 @@ img {
 
 .illustration {
   width: 800px;
-  height: 256px;
+
+  background-size: cover;
+  background-position: center 55%;
 }
 
 .col {
   width: 400px;
   box-sizing: border-box;
 
+  text-align: center;
+
   outline: 3px solid blue;
 }
 
 .details {
   min-height: 330px;
+}
+
+.feature-1,
+.feature-2 {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.feature-1 h3,
+.feature-2 h3 {
+  margin-top: 55px;
+  margin-bottom: 30px;
+
+  color: #ffffff;
+}
+
+.feature-1 p,
+.feature-2 p {
+  margin: 30px 47px;
+}
+
+.feature-1 p:last-child,
+.feature-2 p:last-child {
+  margin-bottom: 55px;
+}
+
+.feature-1 .illustration {
+  background-image: url("../img/sedona-town.jpg")
+}
+
+.feature-2 .illustration {
+  background-image: url("../img/devil-bridge.jpg");
 }
 
 .last-features {
