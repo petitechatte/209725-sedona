@@ -341,14 +341,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 120px;
 
   background-color: rgba(254, 254, 254, 0.9);
+
+  min-height: 120px;
 }
 
 .main-footer section {
-  padding: 35px;
   text-align: center;
+}
+
+.footer-hashtag {
+  margin: 50px 0;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
 }
 
 .container {
