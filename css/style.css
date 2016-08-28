@@ -496,6 +496,18 @@ img {
   margin: 0 6%;
 }
 
+.main-navigation .active {
+  color: #766357;
+}
+
+.main-navigation .active:hover {
+  color: #604e43;
+}
+
+.main-navigation .active:active {
+  color: #d6d0cc;
+}
+
 /* фильтр гостиниц */
 
 .hotel-filter {
