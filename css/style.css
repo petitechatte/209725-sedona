@@ -501,9 +501,26 @@ img {
 /* фильтр гостиниц */
 
 .hotel-filter {
-  background: #6c99c0 url("../img/filter-background.jpg");
+  padding: 30px 0;
+  color: #ffffff;
+
+  background-color: #6c99c0;
+  background-image:  url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   outline: 3px solid red;
+}
+
+.hotel-filter fieldset {
+  border: none;
+  outline: 3px solid yellow;
+}
+
+.hotel-filter legend,
+.hotel-filter label {
+  display: block;
 }
 
 .hotel-details,
@@ -512,8 +529,8 @@ img {
   width: 240px;
   padding: 0;
   margin: 0;
+  margin-right: 14px;
 
-  min-height: 216px;
   outline: 3px solid yellow;
 }
 
@@ -522,12 +539,48 @@ img {
   width: 328px;
   padding: 0;
 
-  min-height: 216px;
   outline: 3px solid yellow;
 }
 
+.hotel-filter legend {
+  margin-bottom: 28px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .hotel-filter label {
-  display: block;
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 38px;
+
+  cursor: pointer;
+}
+
+.hotel-filter label:last-child {
+  margin-bottom: 0;
+}
+
+.hotel-filter input[type="checkbox"] {
+  display: none;
+}
+
+ input[type="checkbox"] + label::before {
+  content: "\2610";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 10px;
+  height: 10px;
+
+  font-size: 26px;
+  font-family: symbols-sedona;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "\2611";
 }
 
 .hotel-sort {

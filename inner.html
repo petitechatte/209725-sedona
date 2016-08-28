@@ -26,15 +26,21 @@
           <form class="container clearfix" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="hotel-details">
               <legend>Инфраструктура:</legend>
-              <label><input type="checkbox" name="details" value="pool" checked>Бассейн</label>
-              <label><input type="checkbox" name="details" value="parking">Парковка</label>
-              <label><input type="checkbox" name="details" value="wi-fi">Wi-Fi</label>
+              <input type="checkbox" name="details" value="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+              <input type="checkbox" name="details" value="parking" id="parking">
+              <label for="parking">Парковка</label>
+              <input type="checkbox" name="details" value="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
             </fieldset>
             <fieldset class="hotel-type">
               <legend>Тип жилья</legend>
-              <label><input type="checkbox" name="type" value="hotel" checked>Гостиница</label>
-              <label><input type="checkbox" name="type" value="motel" checked>Мотель</label>
-              <label><input type="checkbox" name="type" value="apartments" checked>Апартаменты</label>
+              <input type="checkbox" name="type" value="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+             <input type="checkbox" name="type" value="motel" id="motel" checked>
+               <label for="motel">Мотель</label>
+              <input type="checkbox" name="type" value="apartments" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
             </fieldset>
             <fieldset class="hotel-price">
               <legend>Стоимость в сутки (р):</legend>
