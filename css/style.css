@@ -328,9 +328,13 @@ img {
 }
 
 .map {
-  height: 473px;
+  height: 593px;
 
   background: #f2f1ef url("../img/map.jpg") no-repeat;
+}
+
+.map-visible {
+  height: 472px;
 }
 
 .main-footer {
@@ -338,6 +342,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-height: 120px;
+
+  background-color: rgba(254, 254, 254, 0.9);
 }
 
 .main-footer section {
