@@ -404,8 +404,6 @@ img {
   margin: 35px 0;
 
   text-align: center;
-
-  outline: 3px solid green;
 }
 
 .footer-hashtag {
@@ -429,6 +427,7 @@ img {
   margin-right: 6px;
 
   vertical-align: top;
+  text-align: center;
 
   background-color: #81b3d2;
 }
@@ -443,6 +442,20 @@ img {
 
 .footer-social .social-btn:active {
   background-color: #5496bd;
+}
+
+.social-btn span {
+  font-size: 19px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.social-btn:active span {
+  color: #88b6d1;
+}
+
+.social-btn .icon-youtube {
+  font-size: 23px;
 }
 
 .footer-copyright {
