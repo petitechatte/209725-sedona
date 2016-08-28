@@ -153,15 +153,25 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
-  outline: 3px solid red;
 }
 
+
+
 .features-header {
-  min-height: 216px;
   padding: 0px 312px;
 
-  outline: 3px solid yellow;
+  text-align: center;
+}
+
+.features-header h2 {
+  margin-top: 62px;
+  margin-bottom: 40px;
+}
+
+.features-header p {
+  margin-bottom: 50px;
+
+  line-height: 26px;
 }
 
 .row {
