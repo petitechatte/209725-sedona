@@ -484,17 +484,25 @@ img {
 .academy-logo:active img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
 
 /* внутренняя страница */
 
+.inner-page .wrapper {
+  background-color: #fefefe;
+}
+
 .container {
-  width: 1056px;
-  margin: auto;
+  margin: 0 6%;
 
   outline: 3px solid purple;
 }
 
+/* фильтр гостиниц */
+
 .hotel-filter {
+  background: #6c99c0 url("../img/filter-background.jpg");
+
   outline: 3px solid red;
 }
 
