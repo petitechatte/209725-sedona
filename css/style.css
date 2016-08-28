@@ -749,21 +749,6 @@ input[type="checkbox"].disabled:checked + label::before {
 /* сортировка */
 
 .hotel-sort {
-   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-
-  min-height: 86px;
-  outline: 3px solid yellow;
-}
-
-.hotel-sort ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,11 +759,63 @@ input[type="checkbox"].disabled:checked + label::before {
       -ms-flex-align: stretch;
           align-items: stretch;
 
+  color: #000000;
+
+  outline: 3px solid yellow;
+}
+
+.hotels-number {
+  flex-basis: 135px;
+  flex-grow: 0;
+
+  margin-right: 30px;
+
+  font-size: 21px;
+  line-height: 86px;
+  font-weight: 700;
+}
+
+.hotel-sort ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
+
   list-style-type: none;
 }
 
 .hotel-sort li {
+  font-size: 12px;
+  line-height: 86px;
+
   outline: 3px solid orange;
+}
+
+.hotel-sort a {
+  color: #b1b1b1;
+  text-decoration: none;
+
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.hotel-sort a:hover {
+  color: #81b3d2;
+}
+
+.hotel-sort a:active {
+  color: #000000;
+}
+
+.hotel-sort a.current {
+  color: #81b3d2;
+
+  border-bottom: none;
+  cursor: default;
 }
 
 .hotels-number {
@@ -832,6 +869,7 @@ input[type="checkbox"].disabled:checked + label::before {
 .hotel-photo {
   width: 135px;
   height: 90px;
+  margin-right: 30px;
   padding: 31px 0;
 }
 
