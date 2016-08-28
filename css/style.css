@@ -313,6 +313,8 @@ img {
   background-color: #766357;
 }
 
+/* форма поиска гостиниц */
+
 .hotel-form {
   position: absolute;
   top: 100%;
@@ -327,6 +329,8 @@ img {
   outline: 3px solid yellow;
 }
 
+/* карта */
+
 .map {
   height: 593px;
 
@@ -337,28 +341,79 @@ img {
   height: 472px;
 }
 
+/* подвал */
+
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
-  background-color: rgba(254, 254, 254, 0.9);
+  line-height: 26px;
+  color: #000000;
 
-  min-height: 120px;
+  background-color: rgba(254, 254, 254, 0.9);
 }
 
 .main-footer section {
+  margin: 35px 0;
+
   text-align: center;
+
+  outline: 3px solid green;
 }
 
 .footer-hashtag {
-  margin: 50px 0;
+  line-height: 48px;
+  vertical-align: middle;
+}
 
+.footer-hashtag p {
   font-size: 21px;
-  line-height: 26px;
-  color: #000000;
   font-weight: 700;
 }
+
+.footer-social {
+  font-size: 0;
+}
+
+.footer-social .social-btn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+
+  vertical-align: top;
+
+  background-color: #81b3d2;
+}
+
+.footer-copyright {
+  line-height: 48px;
+  vertical-align: middle;
+}
+
+.footer-copyright img {
+  vertical-align: middle;
+}
+
+.footer-copyright a {
+  margin-left: 8px;
+}
+
+.academy-logo img {
+  -webkit-filter: grayscale(1) brightness(0);
+          filter: grayscale(1) brightness(0);
+}
+
+.academy-logo:hover img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.academy-logo:active img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+
+/* внутренняя страница */
 
 .container {
   width: 1056px;
