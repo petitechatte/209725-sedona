@@ -44,6 +44,8 @@ img {
   box-shadow: rgba(0, 1, 1, 0.2) 0 0 15px 5px;
 }
 
+/* шапка */
+
 .main-header {
   line-height: 25px;
   color: #000000;
@@ -104,21 +106,27 @@ img {
   z-index: 10;
 }
 
+/* заголовок главной */
+
 .content-header {
   height: 510px;
   box-sizing: border-box;
   padding-top: 75px;
   background: #386f98 url("../img/background-photo.jpg") no-repeat;
-  outline: 3px solid red;
 }
 
 .heading {
   width: 458px;
   height: 352px;
   margin: 0 auto;
-
-  outline: 3px solid yellow;
 }
+
+.heading img {
+  width: 458px;
+  height: 352px;
+}
+
+/* блок преимуществ */
 
 .features {
   display: -webkit-box;
