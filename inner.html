@@ -34,7 +34,7 @@
               <label for="wi-fi">Wi-Fi</label>
             </fieldset>
             <fieldset class="hotel-type">
-              <legend>Тип жилья</legend>
+              <legend>Тип жилья:</legend>
               <input type="checkbox" name="type" value="hotel" id="hotel" checked>
               <label for="hotel">Гостиница</label>
              <input type="checkbox" name="type" value="motel" id="motel" checked>
@@ -44,16 +44,18 @@
             </fieldset>
             <fieldset class="hotel-price">
               <legend>Стоимость в сутки (р):</legend>
-              <div class="price-limits">
-                <span class="limit">От 0</span>
-                <!-- вертикальная черта будет псевдоэлементом -->
-                <span class="limit">До 3000</span>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-               <div class="price-range">
-                 <input type="range" name="min-price" min="0" max="3000" value="0">
-                 <input type="range" name="max-price" min="0" max="3000" value="2000">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
-              <button type="submit">Показать</button>
+              <button class="btn-transparent" type="submit">Показать</button>
             </fieldset>
           </form>
         </section>

@@ -494,8 +494,6 @@ img {
 
 .container {
   margin: 0 6%;
-
-  outline: 3px solid purple;
 }
 
 /* фильтр гостиниц */
@@ -509,13 +507,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  outline: 3px solid red;
 }
 
 .hotel-filter fieldset {
   border: none;
-  outline: 3px solid yellow;
 }
 
 .hotel-filter legend,
@@ -531,15 +526,12 @@ img {
   margin: 0;
   margin-right: 14px;
 
-  outline: 3px solid yellow;
 }
 
 .hotel-price {
   float: right;
   width: 328px;
   padding: 0;
-
-  outline: 3px solid yellow;
 }
 
 .hotel-filter legend {
@@ -549,7 +541,8 @@ img {
   font-weight: 700;
 }
 
-.hotel-filter label {
+.hotel-details label,
+.hotel-type label {
   position: relative;
 
   margin-bottom: 25px;
@@ -558,11 +551,12 @@ img {
   cursor: pointer;
 }
 
-.hotel-filter label:last-child {
+.hotel-details label:last-child,
+.hotel-type label:last-child {
   margin-bottom: 0;
 }
 
-.hotel-filter input[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -582,6 +576,137 @@ img {
 input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
+
+/* фильтр цены */
+
+.hotel-price legend {
+  margin-bottom: 12px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 90px;
+  padding-left: 65px;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* ползунки */
+
+.range-controls {
+  position: relative;
+
+  margin-left: 10px;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+/* кнопка фильтра */
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/* сортировка */
 
 .hotel-sort {
    display: -webkit-box;
