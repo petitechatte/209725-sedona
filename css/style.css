@@ -589,6 +589,34 @@ input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
 
+input[type="checkbox"] + label:hover::before {
+  color: #fefefe;
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="checkbox"].disabled + label {
+  cursor: auto;
+}
+
+input[type="checkbox"]:disabled:checked + label,
+input[type="checkbox"].disabled:checked + label {
+  cursor: auto;
+}
+
+input[type="checkbox"]:disabled + label::before,
+input[type="checkbox"].disabled + label::before {
+  color: #6a6a6a;
+
+  cursor: auto;
+}
+
+input[type="checkbox"]:disabled:checked + label::before,
+input[type="checkbox"].disabled:checked + label::before {
+  color: #6a6a6a;
+
+  cursor: auto;
+}
+
 /* фильтр цены */
 
 .hotel-price legend {
