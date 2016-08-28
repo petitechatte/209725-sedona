@@ -109,10 +109,27 @@ img {
 /* заголовок главной */
 
 .content-header {
+  position: relative;
+  z-index: 1;
+
   height: 510px;
   box-sizing: border-box;
   padding-top: 75px;
-  background: #386f98 url("../img/background-photo.jpg") no-repeat;
+  background: #386f98
+    url("../img/background-photo.jpg") no-repeat;
+}
+
+.content-header::after {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom: 0;
+  z-index: 20;
+
+  width: 1200px;
+  height: 57px;
+
+  background: url("../img/background-mask.png") no-repeat;
 }
 
 .heading {
