@@ -176,8 +176,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
-  outline: 3px solid yellow;
 }
 
 .illustration {
@@ -192,8 +190,6 @@ img {
   box-sizing: border-box;
 
   text-align: center;
-
-  outline: 3px solid blue;
 }
 
 .feature-1,
@@ -258,7 +254,19 @@ img {
 }
 
 .last-features {
-  min-height: 255px;
+  background-color: #eeeeee;
+}
+
+.last-features h3 {
+  margin-top: 50px;
+}
+
+.last-features p {
+  margin: 30px 60px;
+}
+
+.last-features p:last-child {
+  margin-bottom: 65px;
 }
 
 .hotel-search {
