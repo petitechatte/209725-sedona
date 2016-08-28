@@ -44,6 +44,14 @@ img {
   box-shadow: rgba(0, 1, 1, 0.2) 0 0 15px 5px;
 }
 
+.main-header {
+  line-height: 25px;
+  color: #000000;
+  font-weight: 700;
+
+  background-color: #ffffff;
+}
+
 .main-navigation ul {
  display: -webkit-box;
   display: -ms-flexbox;
@@ -58,16 +66,12 @@ img {
   margin: 0;
   padding: 0 6%;
   list-style-type: none;
-
-  min-height: 55px;
 }
 
 .main-navigation li {
   width: 240px;
   margin: 0;
-
-  min-height: 55px;
-  outline: 3px solid yellow;
+  padding: 15px 0;
 }
 
 .main-navigation li:nth-child(3) {
@@ -77,6 +81,19 @@ img {
 .main-navigation li:nth-child(3),
 .main-navigation li:nth-child(4) {
   text-align: right;
+}
+
+.main-navigation a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #b2b2b2;
 }
 
 .main-logo {
