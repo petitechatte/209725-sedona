@@ -269,16 +269,53 @@ img {
   margin-bottom: 65px;
 }
 
+/* блок заголовка поиска гостиниц */
+
 .hotel-search {
   position: relative;
 
-  min-height: 289px;
-  outline: 3px solid red;
+  text-align: center;
+
+  border: 1px solid transparent;
+}
+
+.hotel-search p {
+  width: 575px;
+  margin: 0 auto;
+}
+
+.hotel-search .pseudo-heading {
+  margin-top: 54px;
+
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.hotel-search p:last-of-type {
+  margin-top: 30px;
+  margin-bottom: 45px;
+
+  line-height: 24px;
+}
+
+.open-form {
+  margin-bottom: 0;
+  padding: 30px 140px;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: #766357;
 }
 
 .hotel-form {
   position: absolute;
-  top: 290px;
+  top: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
