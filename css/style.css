@@ -885,10 +885,13 @@ input[type="checkbox"].disabled:checked + label::before {
   color: #81b3d2;
 }
 
+/* карточки гостиниц */
+
 .hotel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 30px 0;
 
   outline: 3px solid yellow;
 }
@@ -901,10 +904,67 @@ input[type="checkbox"].disabled:checked + label::before {
   width: 135px;
   height: 90px;
   margin-right: 30px;
-  padding: 31px 0;
 }
 
 .hotel-photo img {
   width: 100%;
   height: auto;
 }
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-info h2 {
+
+}
+
+.hotel-info .hotel-name {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-info .hotel-name:hover {
+  color: #81b3d2;
+}
+
+.hotel-info .hotel-name:active {
+  color: #b2b2b2;
+}
+
+.hotel-info div {
+  font-size: 0;
+}
+
+.hotel-info-main span,
+.hotel-buttons a {
+  display: inline-block;
+  margin-right: 6px;
+
+  font-size: 14px;
+}
+
+.hotel-info-type {
+  min-width: 122px;
+}
+
+.hotel-buttons a {
+  padding: 6px 17px;
+
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hotel-page {
+  background-color: #81b3d2;
+}
+
+.hotel-booking {
+  background-color: #766357;
+}
+
+
