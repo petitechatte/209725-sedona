@@ -428,6 +428,7 @@ img {
   height: 48px;
   margin-right: 6px;
 
+  text-decoration: none;
   vertical-align: top;
   text-align: center;
 
@@ -648,7 +649,8 @@ input[type="checkbox"].disabled:checked + label::before {
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -669,10 +671,15 @@ input[type="checkbox"].disabled:checked + label::before {
 
   color: inherit;
   font: inherit;
+  line-height: 21px;
 
   background: none;
   border: none;
   outline: none;
+}
+
+.price-controls input:focus {
+  line-height: 21px;
 }
 
 /* ползунки */
@@ -765,8 +772,11 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotels-number {
-  flex-basis: 135px;
-  flex-grow: 0;
+  -ms-flex-preferred-size: 135px;
+      flex-basis: 135px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 
   margin-right: 30px;
 
@@ -897,9 +907,16 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotel section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hotel-photo {
@@ -980,7 +997,10 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotel-quality {
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+              -ms-grid-row-align: flex-end;
+          align-items: flex-end;
 }
 
 .hotel-stars {
