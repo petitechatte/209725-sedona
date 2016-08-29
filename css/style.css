@@ -760,8 +760,6 @@ input[type="checkbox"].disabled:checked + label::before {
           align-items: stretch;
 
   color: #000000;
-
-  outline: 3px solid yellow;
 }
 
 .hotels-number {
@@ -792,8 +790,6 @@ input[type="checkbox"].disabled:checked + label::before {
 .hotel-sort li {
   font-size: 12px;
   line-height: 86px;
-
-  outline: 3px solid orange;
 }
 
 .hotel-sort a {
@@ -823,7 +819,6 @@ input[type="checkbox"].disabled:checked + label::before {
       flex-basis: 135px;
 
   min-height: 86px;
-  outline: 3px solid blue;
 }
 
 .sorting-type,
@@ -831,13 +826,12 @@ input[type="checkbox"].disabled:checked + label::before {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-
-  outline: 3px solid blue;
 }
 
 .sorting-type li {
-  padding: 0 15px;
-}
+  margin-right: 35px;
+  padding: 0;
+  }
 
 .sorting-direction,
 .hotel-quality {
@@ -849,8 +843,6 @@ input[type="checkbox"].disabled:checked + label::before {
   margin-left: auto;
 
   text-align: right;
-
-  outline: 3px solid blue;
 }
 
 .sorting-direction li {
