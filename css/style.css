@@ -892,12 +892,12 @@ input[type="checkbox"].disabled:checked + label::before {
   display: -ms-flexbox;
   display: flex;
   padding: 30px 0;
-
-  outline: 3px solid yellow;
 }
 
 .hotel section {
-  outline: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-photo {
@@ -909,16 +909,6 @@ input[type="checkbox"].disabled:checked + label::before {
 .hotel-photo img {
   width: 100%;
   height: auto;
-}
-
-.hotel-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hotel-info h2 {
-
 }
 
 .hotel-info .hotel-name {
@@ -967,4 +957,24 @@ input[type="checkbox"].disabled:checked + label::before {
   background-color: #766357;
 }
 
+.hotel-quality {
+  align-items: flex-end;
+}
 
+.hotel-stars {
+  font-size: 0;
+}
+
+.hotel-stars .icon-star {
+  font-size: 18px;
+  color: #81b3d2;
+  font-family: symbols-sedona;
+}
+
+.hotel-rating {
+  padding: 2px 15px;
+
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
