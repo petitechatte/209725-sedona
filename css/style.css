@@ -841,6 +841,9 @@ input[type="checkbox"].disabled:checked + label::before {
 
 .sorting-direction,
 .hotel-quality {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-preferred-size: 240px;
       flex-basis: 240px;
   margin-left: auto;
@@ -851,7 +854,31 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .sorting-direction li {
+
+
   padding: 0;
+}
+
+.sorting-direction a {
+  font-size: 0;
+
+  border: none;
+}
+
+.sorting-direction span {
+  font-size: 23px;
+  line-height: 20px;
+  color: #cccccc;
+  font-family: symbols-sedona;
+  text-align: center;
+}
+
+.sorting-direction .icon-up-dir {
+
+}
+
+.sorting-direction .icon-down-dir {
+
 }
 
 .hotel {
