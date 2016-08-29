@@ -955,8 +955,28 @@ input[type="checkbox"].disabled:checked + label::before {
   background-color: #81b3d2;
 }
 
+.hotel-page:hover {
+  background-color: #669ec0;
+}
+
+.hotel-page:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
+}
+
 .hotel-booking {
   background-color: #766357;
+}
+
+.hotel-booking:hover {
+  background-color: #604e43;
+}
+
+.hotel-booking:active {
+  color: #857871;
+
+  background-color: #503e33;
 }
 
 .hotel-quality {
