@@ -854,9 +854,11 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .sorting-direction li {
-
-
   padding: 0;
+}
+
+.sorting-direction li:first-child {
+  margin-left: auto;
 }
 
 .sorting-direction a {
@@ -873,12 +875,22 @@ input[type="checkbox"].disabled:checked + label::before {
   text-align: center;
 }
 
-.sorting-direction .icon-up-dir {
-
+.sorting-direction span:hover {
+  color: #000000;
 }
 
-.sorting-direction .icon-down-dir {
+.sorting-direction span:active {
+  color: #81b3d2;
+}
 
+.sorting-direction .current {
+  color: #81b3d2;
+
+  cursor: default;
+}
+
+.sorting-direction .current:hover {
+  color: #81b3d2;
 }
 
 .hotel {
