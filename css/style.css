@@ -375,7 +375,7 @@ img {
   min-height: 285px;
   padding: 55px;
 
-  font: 0;
+  font-size: 0;
   text-align: left;
 
   background-color: #ffffff;
@@ -389,7 +389,7 @@ img {
 .hotel-form label,
 .hotel-form input,
 .hotel-form button {
-  display: inline-block;
+  float: left;
   padding: 5px 10px;
 
   font-size: 14px;
@@ -399,7 +399,6 @@ img {
   font-weight: 700;
 
   background-color: #f2f2f2;
-  outline: 3px solid red;
 }
 
 .hotel-form label {
@@ -413,17 +412,30 @@ img {
   text-transform: uppercase;
 }
 
-.hotel-form input[type="text"]:focus {
+.hotel-form .date {
+  width: 290px;
+  margin-bottom: 30px;
+}
 
+.hotel-form input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-form input[type="text"]:focus {
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.hotel-form .date:focus {
+   width: 290px;
+   padding: 5px 10px;
 }
 
 .hotel-form button {
   cursor: pointer;
-}
-
-.hotel-form .date {
-  width: 290px;
-  margin-bottom: 30px;
 }
 
 .hotel-form .icon-calendar {
@@ -448,7 +460,7 @@ img {
 }
 
 .hotel-form label[for="children"] {
-  margin-left: 12px;
+  margin-left: 20px;
 
   text-align: center;
 }
