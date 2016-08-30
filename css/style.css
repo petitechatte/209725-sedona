@@ -379,8 +379,7 @@ img {
   text-align: left;
 
   background-color: #ffffff;
-
-  outline: 3px solid yellow;
+  box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15);
 }
 
 .hotel-form {
