@@ -86,23 +86,25 @@
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="open-form" href="#" id="open-form">Поиск гостиницы в Седоне</a>
           <!-- всплывающее окно с формой -->
-          <form class="hotel-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="check-in">Дата заезда:</label>
+          <div class="modal-content">
+            <form class="hotel-form" action="https://echo.htmlacademy.ru" method="get">
+              <label for="check-in">Дата заезда:</label>
               <input class="date" type="text" name="check-in" value="24 апреля 2016" id="check-in">
-              <button class="calendar" type="button" id="check-in-date"></button>
-            <label for="check-out">Дата выезда:</label>
+              <button class="icon-calendar" type="button" id="check-in-date"></button>
+              <label for="check-out">Дата выезда:</label>
               <input class="date" type="text" name="check-out" value="4 июля 2016" id="check-out">
-              <button class="calendar" type="button" id="check-out-date"></button>
-            <label for="adults">Взрослые:</label>
-              <button class="change-number" type="button" id="less-adults">-</button>
+              <button class="icon-calendar" type="button" id="check-out-date"></button>
+              <label for="adults">Взрослые:</label>
+              <button class="change-number icon-minus" type="button" id="less-adults"></button>
               <input class="number" type="text" name="adults" value="2" id="adults">
-              <button class="change-number" type="button" id="more-adults">+</button>
-            <label for="children">Дети:</label>
-              <button class="change-number" type="button" id="less-children">-</button>
+              <button class="change-number icon-plus" type="button" id="more-adults"></button>
+              <label for="children">Дети:</label>
+              <button class="change-number icon-minus" type="button" id="less-children"></button>
               <input class="number" type="text" name="children" value="0" id="children">
-              <button class="change-number" type="button" id="more-children">+</button>
-            <button class="find-hotel" type="submit">Найти</button>
-          </form>
+              <button class="change-number icon-plus" type="button" id="more-children"></button>
+              <button class="find-hotel" type="submit">Найти</button>
+            </form>
+          </div>
         </section>
       </main>
       <section class="map">

@@ -363,18 +363,108 @@ img {
 
 /* форма поиска гостиниц */
 
-.hotel-form {
+.modal-content {
   position: absolute;
   top: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 
-  display: none;
-  width: 570px;
-  min-height: 395px;
+  display: block;
+  width: 457px;
+  min-height: 285px;
+  padding: 55px;
+
+  font: 0;
+  text-align: left;
+
+  background-color: #ffffff;
 
   outline: 3px solid yellow;
+}
+
+.hotel-form {
+  outline: 3px solid green;
+}
+
+.hotel-form label,
+.hotel-form input,
+.hotel-form button {
+  display: inline-block;
+  padding: 5px 10px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+
+  background-color: #f2f2f2;
+  outline: 3px solid red;
+}
+
+.hotel-form label {
+  min-width: 110px;
+  padding: 5px 0;
+
+  background-color: #ffffff;
+}
+
+.hotel-form input[type="text"] {
+  text-transform: uppercase;
+}
+
+.hotel-form input[type="text"]:focus {
+
+}
+
+.hotel-form button {
+  cursor: pointer;
+}
+
+.hotel-form .date {
+  width: 290px;
+  margin-bottom: 30px;
+}
+
+.hotel-form .icon-calendar {
+  padding: 5px 0;
+  font-size: 21px;
+  line-height: 26px;
+  color: #c2c2c2;
+
+  transform: translateY(2px);
+}
+
+.hotel-form .number {
+  width: 20px;
+
+  text-align: center;
+}
+
+.hotel-form .change-number {
+  padding: 5px;
+
+  color: #a9a9a9;
+}
+
+.hotel-form label[for="children"] {
+  margin-left: 12px;
+
+  text-align: center;
+}
+
+.hotel-form .find-hotel {
+  display: block;
+  width: 100%;
+  margin-top: 55px;
+  padding: 15px;
+
+  font-size: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
 }
 
 /* карта */
