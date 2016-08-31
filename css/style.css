@@ -411,8 +411,6 @@ img {
 
 .hotel-form input[type="text"] {
   text-transform: uppercase;
-
-  border: 2px solid transparent; /* чтобы не менялся размер в фокусе */
 }
 
 .hotel-form .date {
@@ -426,8 +424,7 @@ img {
 
 .hotel-form input[type="text"]:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  outline: none;
+  outline: 2px solid #e5e5e5;
 }
 
 .hotel-form .date:focus {
