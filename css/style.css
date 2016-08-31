@@ -427,11 +427,6 @@ img {
   outline: 2px solid #e5e5e5;
 }
 
-.hotel-form .date:focus {
-   width: 290px;
-   padding: 5px 10px;
-}
-
 .hotel-form button {
   cursor: pointer;
 }
