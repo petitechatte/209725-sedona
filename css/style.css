@@ -384,7 +384,7 @@ img {
 }
 
 .hotel-form {
-  outline: 3px solid green;
+  position: relative;
 }
 
 .hotel-form label,
@@ -414,7 +414,7 @@ img {
 }
 
 .hotel-form .date {
-  width: 297px;
+  width: 327px;
   margin-bottom: 30px;
 }
 
@@ -440,14 +440,22 @@ img {
 }
 
 .hotel-form .icon-calendar {
+  position: absolute;
+  right: 0;
+
   padding: 5px 0;
   font-size: 21px;
   line-height: 26px;
   color: #c2c2c2;
+  background-color: transparent;
 }
 
-.hotel-form input[type="text"]:focus + .icon-calendar {
-  background-color: #ffffff;
+.hotel-form .check-in-date {
+  top: 0;
+}
+
+.hotel-form .check-out-date {
+  top: 67px;
 }
 
 .hotel-form .number {
