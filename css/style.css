@@ -446,6 +446,10 @@ img {
   color: #c2c2c2;
 }
 
+.hotel-form input[type="text"]:focus + .icon-calendar {
+  background-color: #ffffff;
+}
+
 .hotel-form .number {
   width: 20px;
 
