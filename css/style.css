@@ -377,6 +377,7 @@ img {
 
   font-size: 0;
   text-align: left;
+  color: #000000;
 
   background-color: #ffffff;
   box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15);
@@ -389,7 +390,7 @@ img {
 .hotel-form label,
 .hotel-form input,
 .hotel-form button {
-  float: left;
+
   padding: 5px 10px;
 
   font-size: 14px;
@@ -410,6 +411,8 @@ img {
 
 .hotel-form input[type="text"] {
   text-transform: uppercase;
+
+  border: 2px solid transparent; /* чтобы не менялся размер в фокусе */
 }
 
 .hotel-form .date {
@@ -422,8 +425,6 @@ img {
 }
 
 .hotel-form input[type="text"]:focus {
-  box-sizing: border-box;
-
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline: none;
@@ -436,6 +437,14 @@ img {
 
 .hotel-form button {
   cursor: pointer;
+}
+
+.hotel-form button:hover {
+  color: #000000;
+}
+
+.hotel-form button:active {
+  color: #81b3d2;
 }
 
 .hotel-form .icon-calendar {
@@ -465,14 +474,6 @@ img {
   text-align: center;
 }
 
-.hotel-form button:hover {
-  color: #000000;
-}
-
-.hotel-form button:active {
-  color: #81b3d2;
-}
-
 .hotel-form .find-hotel {
   display: block;
   width: 100%;
@@ -487,6 +488,8 @@ img {
 }
 
 .hotel-form .find-hotel:hover {
+  color: #ffffff;
+
   background-color: #669ec0;
 }
 
