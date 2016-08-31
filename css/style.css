@@ -390,7 +390,7 @@ img {
 .hotel-form label,
 .hotel-form input,
 .hotel-form button {
-
+  float: left;
   padding: 5px 10px;
 
   font-size: 14px;
@@ -414,7 +414,7 @@ img {
 }
 
 .hotel-form .date {
-  width: 290px;
+  width: 297px;
   margin-bottom: 30px;
 }
 
@@ -449,8 +449,6 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: #c2c2c2;
-
-  transform: translateY(2px);
 }
 
 .hotel-form .number {
