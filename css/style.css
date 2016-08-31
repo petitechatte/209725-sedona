@@ -465,6 +465,14 @@ img {
   text-align: center;
 }
 
+.hotel-form button:hover {
+  color: #000000;
+}
+
+.hotel-form button:active {
+  color: #81b3d2;
+}
+
 .hotel-form .find-hotel {
   display: block;
   width: 100%;
@@ -476,6 +484,16 @@ img {
   text-transform: uppercase;
 
   background-color: #81b3d2;
+}
+
+.hotel-form .find-hotel:hover {
+  background-color: #669ec0;
+}
+
+.hotel-form .find-hotel:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
 }
 
 /* карта */
