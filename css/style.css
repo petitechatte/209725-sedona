@@ -370,7 +370,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 
-  display: block;
+  display: none;
   width: 457px;
   min-height: 285px;
   padding: 55px;
