@@ -413,6 +413,24 @@ img {
   text-transform: uppercase;
 }
 
+/* особые стили для IE, будь он проклят */
+
+.hotel-form input[type="text"]::-ms-value {
+  padding: 0px 10px 8px;
+
+  font-size: 14px;
+  line-height: 38px;
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+}
+
+input::-ms-clear {
+   display: none; /* убирает крестик в поле ввода IE */
+}
+
 .hotel-form .date {
   width: 327px;
   margin-bottom: 30px;
@@ -425,6 +443,7 @@ img {
 .hotel-form input[type="text"]:focus {
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
+  outline-offset: -2px;
 }
 
 .hotel-form button {
