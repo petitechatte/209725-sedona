@@ -431,6 +431,8 @@ input::-ms-clear {
    display: none; /* убирает крестик в поле ввода IE */
 }
 
+/* снова общие стили и состояния полей */
+
 .hotel-form .date {
   width: 327px;
   margin-bottom: 30px;
