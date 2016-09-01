@@ -2,30 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
+    <div class="wrapper">
       <header class="main-header">
+        <img class="main-logo" src="img/logo.png" width="138" height="70" alt="City of Sedona">
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><img class="main-logo" src="img/logo.png" width="138" height="70" alt="City of Sedona"></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li><a href="inner.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <header class="content-header">
           <div class="heading">
-            <img src="img/index-heading.gif" width="458" height="352"
+            <img src="img/index-heading.png" width="458" height="352"
                  alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
           </div>
         </header>
-        <!-- Белая фигурная рамка снизу будет сделана псевдоэлементом -->
         <article class="features">
           <header class="features-header">
             <h2>Седона — небольшой городок в Аризоне,
@@ -81,43 +82,50 @@
           </div>
         </article>
         <section class="hotel-search">
-          <p><b class="pseudo-heading">Заинтересовались?</b></p>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="open-form" type="button" id="open-form">Поиск гостиницы в Седоне</button>
+          <p class="pseudo-heading">Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="open-form" href="#" id="open-form">Поиск гостиницы в Седоне</a>
           <!-- всплывающее окно с формой -->
-          <form class="hotel-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="check-in">Дата заезда:</label>
+          <div class="modal-content">
+            <form class="hotel-form clearfix" action="https://echo.htmlacademy.ru" method="get">
+              <label for="check-in">Дата заезда:</label>
               <input class="date" type="text" name="check-in" value="24 апреля 2016" id="check-in">
-              <button class="calendar" type="button" id="check-in-date"></button>
-            <label for="check-out">Дата выезда:</label>
+              <button class="icon-calendar check-in-date" type="button" id="check-in-date"></button>
+              <label for="check-out">Дата выезда:</label>
               <input class="date" type="text" name="check-out" value="4 июля 2016" id="check-out">
-              <button class="calendar" type="button" id="check-out-date"></button>
-            <label for="adults">Взрослые:</label>
-              <button class="change-number" type="button" id="less-adults">-</button>
+              <button class="icon-calendar check-out-date" type="button" id="check-out-date"></button>
+              <label for="adults">Взрослые:</label>
+              <button class="change-number icon-minus" type="button" id="less-adults"></button>
               <input class="number" type="text" name="adults" value="2" id="adults">
-              <button class="change-number" type="button" id="more-adults">+</button>
-            <label for="children">Дети:</label>
-              <button class="change-number" type="button" id="less-children">-</button>
+              <button class="change-number icon-plus" type="button" id="more-adults"></button>
+              <label for="children">Дети:</label>
+              <button class="change-number icon-minus" type="button" id="less-children"></button>
               <input class="number" type="text" name="children" value="0" id="children">
-              <button class="change-number" type="button" id="more-children">+</button>
-            <button class="find-hotel" type="submit">Найти</button>
-          </form>
+              <button class="change-number icon-plus" type="button" id="more-children"></button>
+              <button class="find-hotel" type="submit">Найти</button>
+            </form>
+          </div>
         </section>
-        <section class="map"></section>
       </main>
-      <footer class="main-footer">
-        <section class="footer-hashtag">
-          <p>#visitsedona</p>
+      <section class="map">
+        <div class="map-visible"></div>
+        <footer class="main-footer">
+          <section class="footer-hashtag col">
+            <p>#visitsedona</p>
+          </section>
+          <section class="footer-social col">
+            <a class="social-btn" href="#">Твиттер <span class="icon-twitter"></span></a>
+            <a class="social-btn" href="#">Фейсбук <span class="icon-facebook"></span></a>
+            <a class="social-btn" href="#">Ютуб <span class="icon-youtube"></span></a>
         </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-ut" href="#">Ютуб</a>
-        </section>
-        <section class="footer-copyright">
-          Website by <a href="https://htmlacademy.ru/"><img class="academy-logo" src="img/academy-logo.png" width="113" height="39" alt="html academy"></a>
+          <section class="footer-copyright col">
+            Website by
+            <a class="academy-logo" href="https://htmlacademy.ru/">
+              <img src="img/academy-logo-hover.png" width="113" height="39" alt="html academy">
+            </a>
         </section>
       </footer>
+      </section>
     </div>
   </body>
 </html>
