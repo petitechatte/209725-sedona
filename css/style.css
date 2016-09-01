@@ -912,8 +912,11 @@ input[type="checkbox"].disabled:checked + label::before {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  padding: 0 6%;
 
   color: #000000;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-number {
@@ -1050,7 +1053,8 @@ input[type="checkbox"].disabled:checked + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 0;
+  padding: 30px 6%;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel section {
