@@ -941,6 +941,8 @@ input[type="checkbox"].disabled:checked + label::before {
 
 .hotel-sort a:active {
   color: #000000;
+
+  border: none;
 }
 
 .hotel-sort a.current {
