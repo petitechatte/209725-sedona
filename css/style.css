@@ -116,13 +116,19 @@ img {
 }
 
 .main-navigation li {
-  width: 240px;
-  margin: 0;
-  padding: 15px 0;
+  width: 20%;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
+.main-navigation li:nth-child(2) {
+  margin-left: 30px;
+  margin-right: auto;
 }
 
 .main-navigation li:nth-child(3) {
   margin-left: auto;
+  margin-right: 30px;
 }
 
 .main-navigation li:nth-child(3),
@@ -145,7 +151,7 @@ img {
 
 .main-logo {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 50%;
   margin-left: -69px;
   z-index: 10;
@@ -161,7 +167,7 @@ img {
   box-sizing: border-box;
   padding-top: 75px;
   background: #386f98
-    url("../img/background-photo.jpg") no-repeat;
+    url("../img/background-photo.jpg") no-repeat 0 -55px;
 }
 
 .content-header::after {
@@ -207,8 +213,8 @@ img {
 }
 
 .features-header h2 {
-  margin-top: 62px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 26px;
 }
 
 .features-header p {
