@@ -248,6 +248,7 @@ img {
 .feature-2 h3 {
   margin-top: 55px;
   margin-bottom: 30px;
+  padding: 0 100px;
 
   color: #ffffff;
 }
@@ -304,6 +305,7 @@ img {
 
 .last-features h3 {
   margin-top: 50px;
+  padding: 0 120px;
 }
 
 .last-features p {
