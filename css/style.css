@@ -407,13 +407,14 @@ img {
 
 .hotel-form .half-width {
   float: left;
+
+  display: flex;
+  flex-direction: row;
   width: 50%;
 }
 
 .hotel-form. half-width:last-of-type {
   float: right;
-
-  text-align: right;
 }
 
 .hotel-form label,
@@ -915,10 +916,10 @@ input[type="checkbox"].disabled:checked + label::before {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 0px 35px;
+  padding: 5px 35px;
 
   font-size: 14px;
-  line-height: 35px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1221,18 +1222,27 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotel-stars {
+  margin-top: 1px;
+  padding: 0;
+
   font-size: 0;
 }
 
 .hotel-stars .icon-star {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
   font-size: 18px;
   line-height: 21px;
   color: #81b3d2;
-  font-family: symbols-sedona;
+  letter-spacing: -12px;
 }
 
 .hotel-rating {
-  padding: 8px 12px;
+  margin-bottom: 5px;
+  padding: 2px 12px;
 
   color: #666666;
 
