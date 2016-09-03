@@ -382,8 +382,8 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 
-  display: none;
-  width: 457px;
+  display: block;
+  width: 460px;
   min-height: 285px;
   padding: 55px;
 
@@ -399,14 +399,30 @@ img {
   position: relative;
 }
 
+.hotel-form fieldset {
+  border: none;
+  margin: 0;
+  outline: 2px solid green;
+}
+
+.hotel-form .half-width {
+  float: left;
+  width: 50%;
+}
+
+.hotel-form. half-width:last-of-type {
+  float: right;
+
+  text-align: right;
+}
+
 .hotel-form label,
 .hotel-form input,
 .hotel-form button {
   float: left;
-  padding: 5px 10px;
 
   font-size: 14px;
-  line-height: 26px;
+  line-height: 38px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -415,8 +431,8 @@ img {
 }
 
 .hotel-form label {
-  min-width: 110px;
-  padding: 5px 0;
+  min-width: 100px;
+  margin-right: 0px;
 
   background-color: #ffffff;
 }
@@ -446,8 +462,9 @@ input::-ms-clear {
 /* снова общие стили и состояния полей */
 
 .hotel-form .date {
-  width: 327px;
+  width: 315px;
   margin-bottom: 30px;
+  padding: 0px 15px;
 }
 
 .hotel-form input[type="text"]:hover {
@@ -476,9 +493,10 @@ input::-ms-clear {
   position: absolute;
   right: 0;
 
-  padding: 5px 0;
+  padding: 0 5px;
+
   font-size: 21px;
-  line-height: 26px;
+  line-height: 38px;
   color: #c2c2c2;
   background-color: transparent;
 }
@@ -491,29 +509,32 @@ input::-ms-clear {
   top: 67px;
 }
 
-.hotel-form .number {
-  width: 20px;
+.hotel-form .change-number {
+  width: 38px;
+  height: 38px;
 
+  color: #a9a9a9;
   text-align: center;
 }
 
-.hotel-form .change-number {
-  padding: 5px;
+.hotel-form .number {
+  width: 38px;
 
-  color: #a9a9a9;
+  line-height: 38px;
+  text-align: center;
 }
 
 .hotel-form label[for="children"] {
-  margin-left: 38px;
 
-  text-align: center;
+
+  text-align: right;
 }
 
 .hotel-form .find-hotel {
   display: block;
   width: 100%;
-  margin-top: 55px;
-  padding: 15px;
+  margin-top: 54px;
+  padding: 10px;
 
   font-size: 21px;
   color: #ffffff;

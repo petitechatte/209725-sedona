@@ -88,20 +88,26 @@
           <!-- всплывающее окно с формой -->
           <div class="modal-content">
             <form class="hotel-form clearfix" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset>
               <label for="check-in">Дата заезда:</label>
               <input class="date" type="text" name="check-in" value="24 апреля 2016" id="check-in">
               <button class="icon-calendar check-in-date" type="button" id="check-in-date"></button>
               <label for="check-out">Дата выезда:</label>
               <input class="date" type="text" name="check-out" value="4 июля 2016" id="check-out">
               <button class="icon-calendar check-out-date" type="button" id="check-out-date"></button>
+              </fieldset>
+              <fieldset class="half-width">
               <label for="adults">Взрослые:</label>
               <button class="change-number icon-minus" type="button" id="less-adults"></button>
               <input class="number" type="text" name="adults" value="2" id="adults">
               <button class="change-number icon-plus" type="button" id="more-adults"></button>
+              </fieldset>
+              <fieldset class="half-width">
               <label for="children">Дети:</label>
               <button class="change-number icon-minus" type="button" id="less-children"></button>
               <input class="number" type="text" name="children" value="0" id="children">
               <button class="change-number icon-plus" type="button" id="more-children"></button>
+              </fieldset>
               <button class="find-hotel" type="submit">Найти</button>
             </form>
           </div>
