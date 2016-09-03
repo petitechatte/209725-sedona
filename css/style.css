@@ -352,7 +352,7 @@ img {
 
 .hotel-search p:last-of-type {
   margin-top: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 
   line-height: 24px;
 }
@@ -543,7 +543,7 @@ input::-ms-clear {
 }
 
 .map-visible {
-  height: 475px;
+  height: 473px;
 }
 
 /* подвал */
@@ -562,11 +562,11 @@ input::-ms-clear {
 .main-footer section {
   margin: 35px 0;
 
+  line-height: 47px;
   text-align: center;
 }
 
 .footer-hashtag {
-  line-height: 48px;
   vertical-align: middle;
 }
 
@@ -577,12 +577,13 @@ input::-ms-clear {
 
 .footer-social {
   font-size: 0;
+  text-align: center;
 }
 
 .footer-social .social-btn {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 47px;
   margin-right: 6px;
 
   text-decoration: none;
@@ -606,7 +607,6 @@ input::-ms-clear {
 
 .social-btn span {
   font-size: 19px;
-  line-height: 48px;
   color: #ffffff;
 }
 
@@ -619,7 +619,6 @@ input::-ms-clear {
 }
 
 .footer-copyright {
-  line-height: 48px;
   vertical-align: middle;
 }
 
@@ -628,7 +627,7 @@ input::-ms-clear {
 }
 
 .footer-copyright a {
-  margin-left: 8px;
+  margin-left: 5px;
 }
 
 .academy-logo img {
