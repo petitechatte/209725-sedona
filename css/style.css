@@ -128,7 +128,7 @@ img {
 
 .main-navigation li:nth-child(3) {
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 31px;
 }
 
 .main-navigation li:nth-child(3),
@@ -233,7 +233,7 @@ img {
   width: 800px;
 
   background-size: cover;
-  background-position: center 55%;
+  background-position: center 53%;
 }
 
 .col {
@@ -253,7 +253,7 @@ img {
 .feature-1 h3,
 .feature-2 h3 {
   margin-top: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 0 100px;
 
   color: #ffffff;
@@ -261,16 +261,16 @@ img {
 
 .feature-1 p,
 .feature-2 p {
-  margin: 30px 47px;
+  margin: 20px 47px;
 }
 
 .feature-1 p:last-child,
 .feature-2 p:last-child {
-  margin-bottom: 55px;
+  margin-bottom: 52px;
 }
 
 .feature-1 .illustration {
-  background-image: url("../img/sedona-town.jpg")
+  background-image: url("../img/sedona-town.jpg");
 }
 
 .feature-2 .illustration {
@@ -295,13 +295,16 @@ img {
 }
 
 .col-3 h3 {
+  margin-top: 56px;
+  padding-top: 105px;
+
   background-image: url("../img/souvenirs-icon.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .details p {
-  margin: 30px 55px;
+  margin: 25px 55px;
   margin-bottom: 80px;
 }
 
@@ -310,16 +313,17 @@ img {
 }
 
 .last-features h3 {
-  margin-top: 50px;
+  margin-top: 47px;
+  margin-bottom: 25px;
   padding: 0 120px;
 }
 
 .last-features p {
-  margin: 30px 60px;
+  margin: 20px 60px;
 }
 
 .last-features p:last-child {
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 /* блок заголовка поиска гостиниц */
