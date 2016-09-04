@@ -411,6 +411,7 @@ img {
   width: 50%;
 }
 
+.hotel-form .half-width:last-of-type {
   float: right;
 }
 
@@ -571,7 +572,7 @@ input::-ms-clear {
 /* карта */
 
 .map {
-  height: 593px;
+  height: 595px;
 
   background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
