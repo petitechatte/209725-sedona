@@ -435,11 +435,18 @@ img {
 }
 
 .modal-content-show {
-  display: block;
   animation-name: flow;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
+}
+
+.modal-content-hide {
+  animation-name: flow;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
 }
 
 .modal-error {
@@ -629,9 +636,11 @@ input::-ms-clear {
   background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
 
+/*
 .map-visible {
   height: 476px;
 }
+*/
 
 /* подвал */
 
@@ -644,6 +653,10 @@ input::-ms-clear {
   color: #000000;
 
   background-color: rgba(254, 254, 254, 0.9);
+}
+
+.index .main-footer {
+  margin-top: 476px;
 }
 
 .main-footer section {

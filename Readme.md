@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наталья Кот](https://up.htmlacademy.ru/htmlcss/14/user/209725).
-* Наставник: [Гоша Егорян](https://htmlacademy.ru/profile/id85633).
+* Наставник: [Гоша Егорян](https://htmlacademy.ru/profile/id85633), [Наталья Налимова](https://htmlacademy.ru/profile/id16507).
 
 ---
 
