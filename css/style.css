@@ -397,7 +397,7 @@ img {
           transform: translateX(-50%);
   z-index: -1;
 
-  display: none;
+  display: block;
   width: 460px;
   min-height: 285px;
   padding: 55px;
@@ -408,6 +408,8 @@ img {
 
   background-color: #ffffff;
   box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15);
+  opacity: 0;
+  transform: translateX(-50%) translateY(-100%);
 }
 
 @keyframes flow {
@@ -421,10 +423,28 @@ img {
   }
 }
 
+@keyframes error {
+  0%, 50%, 100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  25%, 75% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
 .modal-content-show {
   display: block;
-  animation: flow 1s;
-  animation-timing-function: ease-in;
+  animation-name: flow;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.modal-error {
+  animation-name: error;
+  animation-duration: 1s;
 }
 
 .hotel-form {
