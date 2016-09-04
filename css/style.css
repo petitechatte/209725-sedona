@@ -1060,20 +1060,19 @@ input[type="checkbox"].disabled:checked + label::before {
   border: none;
 }
 
-.sorting-direction span {
-  height: 20px;
+.sorting-direction .icon-up-dir,
+.sorting-direction .icon-down-dir {
+  width: 1px;
   margin: 0;
   padding: 0;
 
-
   text-align: right;
-  text-transform: none;
-  text-decoration: inherit;
 
   font-size: 23px;
-  line-height: 20px;
+  line-height: 23px;
   color: #cccccc;
-  font-family: symbols-sedona;
+  letter-spacing: 0px;
+  outline: 1px solid black;
 }
 
 .sorting-direction span:hover {
@@ -1100,7 +1099,10 @@ input[type="checkbox"].disabled:checked + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 26px 6%;
+  padding-top: 26px;
+  padding-bottom: 30px;
+  padding-left: 6%;
+  padding-right: 6%;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1112,9 +1114,7 @@ input[type="checkbox"].disabled:checked + label::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 
   outline: 2px solid red;
 }
@@ -1122,8 +1122,8 @@ input[type="checkbox"].disabled:checked + label::before {
 .hotel-photo {
   width: 135px;
   height: 90px;
-  margin: 5px 0;
   margin-right: 30px;
+  padding-top: 5px;
 }
 
 .hotel-photo img {
@@ -1131,12 +1131,15 @@ input[type="checkbox"].disabled:checked + label::before {
   height: auto;
 }
 
+.hotel-info {
+  padding: 0;
+}
+
 .hotel-info h2 {
   margin: 0;
   padding: 0;
 
   line-height: 26px;
-  vertical-align: top;
 }
 
 .hotel-info .hotel-name {
@@ -1170,6 +1173,7 @@ input[type="checkbox"].disabled:checked + label::before {
   margin-right: 6px;
 
   font-size: 14px;
+  line-height: 21px;
 }
 
 .hotel-info-type {
@@ -1177,13 +1181,14 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotel-buttons a {
-  padding: 1px 17px;
+  padding: 2px 17px;
 
   line-height: 21px;
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  vertical-align: bottom;
 }
 
 .hotel-page {
@@ -1241,8 +1246,7 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotel-rating {
-  margin-bottom: 5px;
-  padding: 2px 12px;
+  padding: 3px 12px;
 
   color: #666666;
 
