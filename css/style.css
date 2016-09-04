@@ -403,8 +403,6 @@ img {
   margin: 0;
 
   border: none;
-
-  outline: 2px solid green;
 }
 
 .hotel-form .half-width {
@@ -421,7 +419,7 @@ img {
 .hotel-form input,
 .hotel-form button {
   font-size: 14px;
-  line-height: 37px;
+  line-height: 38px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -1121,8 +1119,6 @@ input[type="checkbox"].disabled:checked + label::before {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-content: space-between;
-
-  outline: 2px solid red;
 }
 
 .hotel-photo {
@@ -1169,8 +1165,6 @@ input[type="checkbox"].disabled:checked + label::before {
   padding: 0;
 
   font-size: 0;
-
-  outline: 2px solid green;
 }
 
 .hotel-info-main span,
