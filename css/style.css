@@ -493,6 +493,11 @@ input::-ms-clear {
   color: #81b3d2;
 }
 
+.hotel-form button:focus {
+  border: none;
+  outline: none;
+}
+
 .hotel-form .icon-calendar {
   position: absolute;
   top: 100%;
