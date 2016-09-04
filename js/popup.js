@@ -1,21 +1,24 @@
-var mapOpen = document.querySelector(".js-open-map");
-var mapPopup = document.querySelector(".modal-content-map");
-var mapClose = mapPopup.querySelector(".modal-content-close");
+var open = document.querySelector(".open-form");
+var popup = document.querySelector(".modal-content");
+var form = popup.querySelector("form");
+var checkIn = popup.querySelector("[name=check-in]");
+var checkOut = popup.querySelector("[name=check-out]");
+var adults = popup.querySelector("[name=adults]");
+var children = popup.querySelector("[name=children]");
 
-mapOpen.addEventListener("click", function (event) {
+open.addEventListener("click", function (event) {
   event.preventDefault();
-  mapPopup.classList.add("modal-content-show");
-});
-
-mapClose.addEventListener("click", function (event) {
-  event.preventDefault();
-  mapPopup.classList.remove("modal-content-show");
+  popup.classList.toggle("modal-content-show");
 });
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-content-show")) {
-      mapPopup.classList.remove("modal-content-show");
+    if (popup.classList.contains("modal-content-show")) {
+      popup.classList.remove("modal-content-show");
     }
   }
+});
+
+ form.addEventListener("submit", function(event) {
+        event.preventDefault();
 });

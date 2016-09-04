@@ -82,31 +82,39 @@
           </div>
         </article>
         <section class="hotel-search">
-          <p class="pseudo-heading">Заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="open-form" href="#" id="open-form">Поиск гостиницы в Седоне</a>
+          <div class="animation-mask">
+            <p class="pseudo-heading">Заинтересовались?</p>
+            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="open-form" href="#" id="open-form">Поиск гостиницы в Седоне</a>
+          </div>
           <!-- всплывающее окно с формой -->
           <div class="modal-content">
             <form class="hotel-form clearfix" action="https://echo.htmlacademy.ru" method="get">
               <fieldset>
-              <label for="check-in">Дата заезда:</label>
-              <input class="date" type="text" name="check-in" value="24 апреля 2016" id="check-in">
-              <button class="icon-calendar check-in-date" type="button" id="check-in-date"></button>
-              <label for="check-out">Дата выезда:</label>
-              <input class="date" type="text" name="check-out" value="4 июля 2016" id="check-out">
-              <button class="icon-calendar check-out-date" type="button" id="check-out-date"></button>
+                <label for="check-in">Дата заезда:</label>
+                <input class="date" type="text" name="check-in" value="24 апреля 2016" id="check-in">
+                <button class="icon-calendar check-in-date" type="button" id="check-in-date"></button>
+              </fieldset>
+              <fieldset>
+                <label for="check-out">Дата выезда:</label>
+                <input class="date" type="text" name="check-out" value="4 июля 2016" id="check-out">
+                <button class="icon-calendar check-out-date"   type="button" id="check-out-date"></button>
               </fieldset>
               <fieldset class="half-width">
-              <label for="adults">Взрослые:</label>
-              <button class="change-number icon-minus" type="button" id="less-adults"></button>
-              <input class="number" type="text" name="adults" value="2" id="adults">
-              <button class="change-number icon-plus" type="button" id="more-adults"></button>
+                <label for="adults">Взрослые:</label>
+                <div class="number-controls">
+                  <button class="change-number icon-minus" type="button" id="less-adults"></button>
+                  <input class="number" type="text" name="adults" value="2" id="adults">
+                  <button class="change-number icon-plus" type="button" id="more-adults"></button>
+                </div>
               </fieldset>
               <fieldset class="half-width">
               <label for="children">Дети:</label>
-              <button class="change-number icon-minus" type="button" id="less-children"></button>
-              <input class="number" type="text" name="children" value="0" id="children">
-              <button class="change-number icon-plus" type="button" id="more-children"></button>
+                <div class="number-controls">
+                  <button class="change-number icon-minus" type="button" id="less-children"></button>
+                  <input class="number" type="text" name="children" value="0" id="children">
+                  <button class="change-number icon-plus" type="button" id="more-children"></button>
+                </div>
               </fieldset>
               <button class="find-hotel" type="submit">Найти</button>
             </form>
@@ -114,7 +122,9 @@
         </section>
       </main>
       <section class="map">
-        <div class="map-visible"></div>
+        <div class="map-visible">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419104.3818129026!2d-111.83908333436797!3d34.849870146589105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2sby!4v1472997072302" width="1200" height="476" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         <footer class="main-footer">
           <section class="footer-hashtag col">
             <p>#visitsedona</p>
@@ -133,5 +143,6 @@
       </footer>
       </section>
     </div>
+    <script src="js/popup.js"></script>
   </body>
 </html>
