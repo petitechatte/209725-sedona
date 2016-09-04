@@ -382,7 +382,7 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 
-  display: block;
+  display: none;
   width: 460px;
   min-height: 285px;
   padding: 55px;
@@ -393,6 +393,10 @@ img {
 
   background-color: #ffffff;
   box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-content-show {
+  display: block;
 }
 
 .hotel-form {
