@@ -197,6 +197,9 @@ img {
 /* блок преимуществ */
 
 .features {
+  position: relative;
+  z-index: 30;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,10 +333,20 @@ img {
 
 .hotel-search {
   position: relative;
+  z-index: 15;
 
   text-align: center;
 
   border: 1px solid transparent;
+}
+
+.animation-mask {
+  position: relative;
+  z-index: 10;
+
+  padding-top: 54px;
+
+  background-color: #ffffff;
 }
 
 .hotel-search p {
@@ -342,8 +355,6 @@ img {
 }
 
 .hotel-search .pseudo-heading {
-  margin-top: 54px;
-
   font-size: 30px;
   line-height: 24px;
   color: #000000;
@@ -358,6 +369,9 @@ img {
 }
 
 .hotel-search .open-form {
+  position: relative;
+  z-index: 10;
+
   display: inline-block;
   margin-bottom: 0;
   padding: 30px 140px;
@@ -381,6 +395,7 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: -1;
 
   display: none;
   width: 460px;
@@ -395,8 +410,21 @@ img {
   box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15);
 }
 
+@keyframes flow {
+  0%   {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
 .modal-content-show {
   display: block;
+  animation: flow 1s;
+  animation-timing-function: ease-in;
 }
 
 .hotel-form {
