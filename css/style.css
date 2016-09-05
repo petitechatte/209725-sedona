@@ -363,7 +363,7 @@ img {
 
 .hotel-search p:last-of-type {
   margin-top: 30px;
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 
   line-height: 24px;
 }
@@ -646,17 +646,18 @@ input::-ms-clear {
 
 /* карта */
 
+.index-bottom {
+  position: relative;
+}
+
 .map {
+  margin: 0;
+  padding: 0;
+
   height: 593px;
 
   background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
-
-/*
-.map-visible {
-  height: 476px;
-}
-*/
 
 /* подвал */
 
@@ -665,14 +666,21 @@ input::-ms-clear {
   display: -ms-flexbox;
   display: flex;
 
+  margin: 0;
+  padding: 0;
+
   line-height: 26px;
   color: #000000;
 
-  background-color: rgba(254, 254, 254, 0.9);
+  background-color: rgba(254, 254, 254, 0.85);
 }
 
-.index .main-footer {
-  margin-top: 476px;
+.index-footer {
+  position: absolute;
+  bottom: 0;
+
+  padding-top: 1px;
+  padding-bottom: 3px;
 }
 
 .main-footer section {
