@@ -409,42 +409,65 @@ img {
   background-color: #ffffff;
   box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15);
   opacity: 0;
-  transform: translateX(-50%) translateY(-100%);
+  -webkit-transform: translateX(-50%) translateY(-100%);
+          transform: translateX(-50%) translateY(-100%);
 }
 
 @keyframes flow {
   0%   {
     opacity: 0;
-    transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-100%);
+            transform: translateX(-50%) translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
   }
 }
 
 @keyframes error {
   0%, 50%, 100% {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
   }
   25%, 75% {
     opacity: 0;
-    transform: translateX(-50%) translateY(0);
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
   }
 }
 
 .modal-content-show {
-  display: block;
-  animation-name: flow;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: flow;
+          animation-name: flow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.modal-content-hide {
+  -webkit-animation-name: flow;
+          animation-name: flow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
 }
 
 .modal-error {
-  animation-name: error;
-  animation-duration: 1s;
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .hotel-form {
@@ -629,9 +652,11 @@ input::-ms-clear {
   background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
 
+/*
 .map-visible {
   height: 476px;
 }
+*/
 
 /* подвал */
 
@@ -644,6 +669,10 @@ input::-ms-clear {
   color: #000000;
 
   background-color: rgba(254, 254, 254, 0.9);
+}
+
+.index .main-footer {
+  margin-top: 476px;
 }
 
 .main-footer section {
