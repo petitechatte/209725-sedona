@@ -646,10 +646,6 @@ input::-ms-clear {
 
 /* карта */
 
-.index-bottom {
-  position: relative;
-}
-
 .map {
   margin: 0;
   padding: 0;
@@ -673,14 +669,6 @@ input::-ms-clear {
   color: #000000;
 
   background-color: rgba(254, 254, 254, 0.85);
-}
-
-.index-footer {
-  position: absolute;
-  bottom: 0;
-
-  padding-top: 1px;
-  padding-bottom: 3px;
 }
 
 .main-footer section {
