@@ -318,7 +318,7 @@ img {
 .last-features h3 {
   margin-top: 47px;
   margin-bottom: 25px;
-  padding: 0 120px;
+  padding: 0 135px;
 }
 
 .last-features p {
@@ -666,9 +666,9 @@ input::-ms-clear {
   display: -ms-flexbox;
   display: flex;
 
-  height: 120px;
+  min-height: 125px;
   margin: 0;
-  margin-top: -120px;
+  margin-top: -125px;
   padding: 0;
 
   line-height: 26px;
@@ -678,7 +678,7 @@ input::-ms-clear {
 }
 
 .main-footer section {
-  margin: 35px 0;
+  margin-top: 35px;
 
   line-height: 47px;
   text-align: center;
