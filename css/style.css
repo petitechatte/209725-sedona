@@ -116,7 +116,6 @@ img {
 }
 
 .main-navigation li {
-
   width: 20%;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -665,22 +664,25 @@ input::-ms-clear {
 /* подвал */
 
 .main-footer {
-  position: relative; /* критерий Б7 не запрещает относительное позиционирование */
-  z-index: 1000;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
   min-height: 125px;
   margin: 0;
-  margin-top: -125px;
   padding: 0;
 
   line-height: 26px;
   color: #000000;
 
   background-color: rgba(254, 254, 254, 0.85);
+}
+
+.footer-overlay {
+  position: relative; /* критерий Б7 не запрещает относительное позиционирование */
+  z-index: 1000;
+
+  margin-top: -125px;
 }
 
 .main-footer section {
@@ -1280,7 +1282,7 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotel-buttons a {
-  padding: 2px 17px;
+  padding: 3px 17px;
 
   line-height: 21px;
   color: #ffffff;
