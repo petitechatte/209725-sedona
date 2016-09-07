@@ -647,6 +647,9 @@ input::-ms-clear {
 /* карта */
 
 .map {
+  position: relative;
+  z-index: 1;
+
   margin: 0;
   padding: 0;
 
@@ -658,11 +661,16 @@ input::-ms-clear {
 /* подвал */
 
 .main-footer {
+  position: relative; /* критерий Б7 не запрещает относительное позиционирование */
+  z-index: 1000;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
+  height: 120px;
   margin: 0;
+  margin-top: -120px;
   padding: 0;
 
   line-height: 26px;
