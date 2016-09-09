@@ -127,12 +127,18 @@ img {
 }
 
 .main-navigation li:nth-child(3) {
+  position: relative;
+
+  width: 138px;
+}
+
+.main-navigation li:nth-child(4) {
   margin-left: auto;
   margin-right: 31px;
 }
 
-.main-navigation li:nth-child(3),
-.main-navigation li:nth-child(4) {
+.main-navigation li:nth-child(4),
+.main-navigation li:nth-child(5) {
   text-align: right;
 }
 
@@ -152,8 +158,7 @@ img {
 .main-logo {
   position: absolute;
   top: 0px;
-  left: 50%;
-  margin-left: -69px;
+  margin-left: 1px;
   z-index: 10;
 }
 
@@ -318,7 +323,7 @@ img {
 .last-features h3 {
   margin-top: 47px;
   margin-bottom: 25px;
-  padding: 0 120px;
+  padding: 0 135px;
 }
 
 .last-features p {
@@ -646,15 +651,12 @@ input::-ms-clear {
 
 /* карта */
 
-.index-bottom {
-  position: relative;
-}
-
 .map {
+  position: relative;
+  z-index: 1;
+
   margin: 0;
   padding: 0;
-
-  height: 593px;
 
   background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
@@ -666,6 +668,7 @@ input::-ms-clear {
   display: -ms-flexbox;
   display: flex;
 
+  min-height: 125px;
   margin: 0;
   padding: 0;
 
@@ -675,16 +678,15 @@ input::-ms-clear {
   background-color: rgba(254, 254, 254, 0.85);
 }
 
-.index-footer {
-  position: absolute;
-  bottom: 0;
+.footer-overlay {
+  position: relative; /* критерий Б7 не запрещает относительное позиционирование */
+  z-index: 1000;
 
-  padding-top: 1px;
-  padding-bottom: 3px;
+  margin-top: -125px;
 }
 
 .main-footer section {
-  margin: 35px 0;
+  margin-top: 35px;
 
   line-height: 47px;
   text-align: center;
@@ -1280,7 +1282,7 @@ input[type="checkbox"].disabled:checked + label::before {
 }
 
 .hotel-buttons a {
-  padding: 2px 17px;
+  padding: 3px 17px;
 
   line-height: 21px;
   color: #ffffff;
