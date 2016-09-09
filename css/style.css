@@ -40,6 +40,7 @@ body {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
+  vertical-align: middle;
 
   speak: none;
 }
@@ -709,7 +710,7 @@ input::-ms-clear {
   margin-right: 6px;
 
   text-decoration: none;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: center;
 
   background-color: #81b3d2;
@@ -719,24 +720,22 @@ input::-ms-clear {
   margin-right: 0;
 }
 
+.social-btn::before {
+  font-size: 19px;
+  color: #ffffff;
+}
+
 .social-btn:hover {
   background-color: #669ec0;
 }
 
 .social-btn:active {
+  color: #88b6d1;
+    
   background-color: #5496bd;
 }
 
-.social-btn span {
-  font-size: 19px;
-  color: #ffffff;
-}
-
-.social-btn:active span {
-  color: #88b6d1;
-}
-
-.icon-youtube {
+.icon-youtube::before {
   font-size: 23px;
 }
 
