@@ -691,7 +691,7 @@ input::-ms-clear {
   display: -ms-flexbox;
   display: flex;
 
-  min-height: 125px;
+  min-height: 120px;
   margin: 0;
   padding: 0;
 
@@ -705,7 +705,7 @@ input::-ms-clear {
   position: relative; /* критерий Б7 не запрещает относительное позиционирование */
   z-index: 1000;
 
-  margin-top: -126px;
+  margin-top: -120px;
 }
 
 .main-footer section {
