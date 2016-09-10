@@ -377,6 +377,7 @@ img {
   z-index: 10;
 
   display: inline-block;
+  margin-top: 1px;
   margin-bottom: 0;
   padding: 30px 140px;
 
@@ -486,6 +487,8 @@ img {
 }
 
 .hotel-form .half-width {
+  position: relative;
+
   float: left;
 
   width: 50%;
@@ -503,8 +506,6 @@ img {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
-
-  background-color: #f2f2f2;
 }
 
 .hotel-form label {
@@ -517,6 +518,8 @@ img {
 
 .hotel-form input[type="text"] {
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
 }
 
 /* особые стили для IE */
@@ -542,9 +545,10 @@ input::-ms-clear {
 
 .hotel-form .date {
   float: right;
-  width: 315px;
+  width: 345px;
   margin-bottom: 30px;
-  padding: 0 15px;
+  padding: 0 14px;
+  box-sizing: border-box;
 }
 
 .hotel-form input[type="text"]:hover {
@@ -565,11 +569,11 @@ input::-ms-clear {
   cursor: pointer;
 }
 
-.hotel-form button:hover {
+.hotel-form button:hover::before {
   color: #000000;
 }
 
-.hotel-form button:active {
+.hotel-form button:active::before {
   color: #81b3d2;
 }
 
@@ -600,16 +604,27 @@ input::-ms-clear {
 }
 
 .hotel-form .change-number {
-  width: 38px;
-  height: 38px;
-  margin-right: 0;
+  position: absolute;
+  width: 40px;
+  height: 37px;
 
+  background-color: transparent;
+}
+
+.hotel-form .change-number::before {
+  padding: 0 0px;
+
+  line-height: 37px;
   color: #a9a9a9;
   text-align: center;
 }
 
+.icon-plus {
+  right: 0;
+}
+
 .hotel-form .number {
-  width: 38px;
+  width: 115px;
   height: 38px;
   margin-right: 0;
 
@@ -682,7 +697,7 @@ input::-ms-clear {
   position: relative; /* критерий Б7 не запрещает относительное позиционирование */
   z-index: 1000;
 
-  margin-top: -125px;
+  margin-top: -126px;
 }
 
 .main-footer section {
