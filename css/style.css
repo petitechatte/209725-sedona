@@ -232,6 +232,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .illustration {
@@ -1261,8 +1263,6 @@ input[type="checkbox"].disabled:checked + label::before {
 
 .hotel-info-main {
   vertical-align: top;
-
-  outline: 2px solid red;
 }
 
 .hotel-info-main span,
