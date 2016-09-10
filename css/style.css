@@ -347,7 +347,7 @@ img {
   position: relative;
   z-index: 10;
 
-  padding-top: 54px;
+  padding-top: 55px;
 
   background-color: #ffffff;
 }
@@ -376,7 +376,6 @@ img {
   z-index: 10;
 
   display: inline-block;
-  margin-top: 1px;
   margin-bottom: 0;
   padding: 30px 140px;
 
@@ -689,7 +688,7 @@ input::-ms-clear {
   display: -ms-flexbox;
   display: flex;
 
-  min-height: 120px;
+  min-height: 119px;
   margin: 0;
   padding: 0;
 
@@ -703,13 +702,14 @@ input::-ms-clear {
   position: relative; /* критерий Б7 не запрещает относительное позиционирование */
   z-index: 1000;
 
-  margin-top: -120px;
+  margin-top: -119px;
 }
 
 .main-footer section {
   margin-top: 35px;
+  margin-bottom: 36px;
 
-  line-height: 47px;
+  line-height: 48px;
   text-align: center;
 }
 
@@ -730,7 +730,7 @@ input::-ms-clear {
 .social-btn {
   display: inline-block;
   width: 46px;
-  height: 47px;
+  height: 48px;
   margin-right: 6px;
 
   text-decoration: none;
